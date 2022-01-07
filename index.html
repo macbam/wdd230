@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+
+
+    <p id = "modified"></p>
+
+    <script>
+        let currentdate = document.lastModified;
+        document.getElementById('modified').textContent = 'Last Updated: ' + currentdate;
+    </script>    
 </body>
 </html>
