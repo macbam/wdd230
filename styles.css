@@ -11,6 +11,8 @@ header{
 footer {
     background-color: #3377aa;
     color: white;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 h1 {
