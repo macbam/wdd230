@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Assignment portal for Brandon MacPherson in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    <title>Course Home Page</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div id = "content">
         <header>
             <img
-                src = "Brandon img.jpg"
+                src = "BrandonImg.jpg"
                 alt = "Brandon img"
             />
             <h1 id = "inlineblock">Brandon A. MacPherson</h1>
@@ -37,17 +38,15 @@
         </main>
 
         <footer>
-            <p>&copy; | Brandon A. MacPherson | Idaho</p>
+            <p>&copy; <span id = "currentYear"></span> | Brandon A. MacPherson | Idaho</p>
+            <p>Last Updated: <span id = "updatedDate"></span></p>
             <p id = "modified"></p>    
         </footer>
 
 
         
-
-        <script>
-            let currentdate = document.lastModified;
-            document.getElementById('modified').textContent = 'Last Updated: ' + currentdate;
-        </script>
+        <script src="js/currentYear.js"></script>
+        <script src="js/updatedDate.js"></script>
     </div> 
 </body>
 </html>
