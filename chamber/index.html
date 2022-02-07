@@ -6,8 +6,11 @@
     <title>Chamber of Commerce - City of Billy, Ohio</title>
     <meta name="description" content="Home page for Billy, Ohio Chamber of Commerce.
       Includes target audience, color scheme, and typography.">
+      
     <link rel = "stylesheet" href= ../css/normalize.css>
     <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />    
 </head>
 
 <body>
@@ -29,27 +32,105 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="date">
-            <!-- <p><span id="chamberDate"></span></p> -->
-        </div>
+        <p><div class="date"></div></p>
     </header>
 
 
 
     <main>
         <div class = "content">
-            <!-- add body content -->
-            <div class = "news">
-                <h3>News</h3>
-            <img src = "img/placeholder.png" alt="placeholder image">
+            <!-- LEFT -->
+            <div class="left">
+                <div class = "ribbon">
+                    <h3>Ribbon Cutting</h3>
+                    <h4>💎 The Diamond Shack</h4>
+                    <p>Join us for the grand opening of The Diamon Shack, Thursday at 1:00 p.m.</p>
+                </div>
+
+                <div class="weather">
+                    <h3>Weather</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/windy.png" alt="windy">
+                            </td>
+                            <td>
+                                <h1>33°C</h1>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Windy</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td>20 mph</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill</td>
+                            <td>N/A</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="join">
+                    <button type="button">Join Us</button>
+                    <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+                </div>
             </div>
-            <div class = "featured">
-                <h3>Featured</h3>
-            <img src = "img/placeholder.png" alt="placeholder image">
+
+            <!-- Center -->
+            <div class="center">
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h3>Welcome to Billy</h3>
+                    </div>
+                    <img src="images/city.jpg" alt="city image">
+                    <button type="button" class="joinBtn">Join the Chamber</button>
+                </div>
+
+                <div class="newsRelease">
+                    <h3>News Realease</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
             </div>
-            <div class = "spotlight">
-                <h3>Buisness Spotlight</h3>
-            <img src = "img/placeholder.png" alt="placeholder image">
+
+            <!-- Right -->
+            <div class="right">
+                <div class="trans">
+                    <h3>Thankful Transport</h3>
+                    <img src="images/moving2.png" alt="moving">
+                    <p>"We get it there for you!"</p>
+                    <hr>
+                    <div class="moreInfo">
+                        <p>hello@thankfultransport.com</p>
+                        <p>999-555-9999</p>
+                    </div>
+                </div>
+                <div class="coding">
+                    <h3>Code Primera</h3>
+                    <img src="images/coding2.png" alt="coding">
+                    <p>An after school coding instructional program.</p>
+                    <hr>
+                    <div class="moreInfo">
+                        <p>contact@codeprimera.com</p>
+                        <p>999-555-1111</p>
+                    </div>
+                </div>
+                <div class="trees">
+                    <h3>Build a Treefort</h3>
+                    <img src="images/treehouse2.png" alt="treehouse">
+                    <p>Over 1000 Plans!</p>
+                    <hr>
+                    <div class="moreInfo">
+                        <p>build1@treefort.com</p>
+                        <p>999-555-5454</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

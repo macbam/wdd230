@@ -1,0 +1,94 @@
+@media only screen and (min-width: 32.5em) and (max-width: 1023px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    .navBar {
+        display: block;
+    }
+    .content {
+        /* grid-template-columns: 1fr 1fr 1fr;
+        display: grid; */
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 0 auto;
+    }
+    /* .content img {
+        width: 200px;
+        height: 150px;
+    } */
+
+    .content {
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        display: flex;
+        /* align-items: center; */
+        /* align-content: flex-end; */
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 0 auto;
+    }
+
+    .center {
+        order: 1;
+    }
+
+    .left {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .right{
+        order: 3;
+        display: flex;
+        margin: 5px 0;
+    }
+
+    .trans, .coding, .trees {
+        width: 100px;
+    }
+
+    /* .weather, .ribbon, .newsRelease, .join {
+        width: 100%;
+        margin: 5px auto;
+    } */
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .weather, .ribbon {
+        width: 40%;
+        /* flex-shrink: 4; */
+        /* flex-grow: 1; */
+    }
+
+    .join {
+        flex-grow: 4; 
+        margin: 5px auto;  
+    }
+
+    .trees {
+        display: none;
+    }
+
+    .trans, .coding {
+        flex-grow: 3;
+    }
+
+    
+}
