@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - City of Billy, Ohio</title>
     <meta name="description" content="Home page for Billy, Ohio Chamber of Commerce.
       Includes target audience, color scheme, and typography.">
     <link rel = "stylesheet" href= ../css/normalize.css>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/base.css" />
 </head>
 
 <body>
@@ -22,24 +21,47 @@
             </div>
         </div>
         <nav>
-            <ul class="navi"> 
-                <li><a href="#" class="active">Discovery</a></li>
+            <ul class="navigation"> 
+                <li><a class="ham" href="#"><img src="images/ham.png" alt="ham" class="down"></a></li>
+                <li><a href="#" >Discovery</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="date">
-            <p><span id="chamberDate"></span></p>
+            <!-- <p><span id="chamberDate"></span></p> -->
         </div>
     </header>
 
-    <main>
 
+
+    <main>
+        <div class = "content">
+            <!-- add body content -->
+            <div class = "news">
+                <h3>News</h3>
+            <img src = "img/placeholder.png" alt="placeholder image">
+            </div>
+            <div class = "featured">
+                <h3>Featured</h3>
+            <img src = "img/placeholder.png" alt="placeholder image">
+            </div>
+            <div class = "spotlight">
+                <h3>Buisness Spotlight</h3>
+            <img src = "img/placeholder.png" alt="placeholder image">
+            </div>
+        </div>
     </main>
 
     <footer>
-        
+        <div class = "foot">
+    
+            
+            <p>&copy;<span id ="currentYear"></span> Billy Chamber of Commerce | Brandon MacPherson | WDD 230 Project | <span id="lastModified"></span></p>
+        </div>
     </footer>
+
+    <script src = "js/index.js"></script>
 </body>
 </html>
