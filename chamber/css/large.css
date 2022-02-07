@@ -61,12 +61,21 @@
         padding: 10px;
         
     }
+
     .trans, .coding, .trees {
         width: 200px;
     }
 
     .right {
+        padding: 15px;
         margin: 10px 0;
+        margin-right: 100px;
+    }
+
+    .left {
+        padding: 15px;
+        margin: 10px 0;
+        margin-left: 100px;
     }
 
     .ribbon, .join {
@@ -78,5 +87,11 @@
     .weather {
         flex-grow: 2;
         padding: 10px;
+    }
+
+    p {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 2px;
     }
 }
