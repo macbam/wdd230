@@ -51,16 +51,24 @@ function mph(kph) {
     return kph * 0.621371;
 }
 
+
+
 const windSpeedKPH = document.querySelector('.windSpeed');
 
 const temp = f(33);
 const windSpeed = mph(windSpeedKPH);
 
-var windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16));
+if(temp > 50 || windSpeed < 3) {
+    document.getElementById("windChill").innerHTML = 'N/A';
+}
 
-var windChill = c(windChill); 
+else {
+    var windChill = (35.74 + (0.6215 * temp))-(35.75 * Math.pow(windSpeed,0.16)) + (0.4275*temp*Math.pow(windSpeed,0.16));
 
-// console.log(windChill);
-windChill = Math.round(windChill);
-// console.log(windChill);
-document.getElementById("windChill").innerHTML = windChill;
+    var windChill = c(windChill); 
+
+    // console.log(windChill);
+    windChill = Math.round(windChill);
+    // console.log(windChill);
+    document.getElementById("windChill").innerHTML = windChill;
+}
