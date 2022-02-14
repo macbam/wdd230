@@ -35,8 +35,17 @@
         column-gap: 10px;
         row-gap: 10px;
 
-        margin-left: 120px;
+        /* margin-left: 120px; */
         
+    }
+
+    .newsRelease {
+        max-width: 800px;
+    }
+
+    /*FIX THIS PLEASE*/
+    .right, .left {
+        max-width: 260px;
     }
 
     .center {
@@ -69,19 +78,23 @@
     .right {
         padding: 15px;
         margin: 10px 0;
-        margin-right: 100px;
+        /* margin-right: 100px; */
     }
 
     .left {
-        padding: 15px;
+        padding: 0px;
         margin: 10px 0;
-        margin-left: 100px;
+        /* margin-left: 100px; */
     }
 
     .ribbon, .join {
         flex-grow: 1;
         padding: 10px;
-        margin: 10px 0;
+        /* margin: 10px 0; */
+    }
+
+    .ribbon, .weather {
+        margin-bottom: 10px;
     }
     
     .weather {
@@ -94,4 +107,12 @@
         margin-right: 1em;
         padding: 2px;
     }
+
+    /* .right{
+        margin-right: 0;
+    }
+
+    .left{
+        margin-left: 0;
+    } */
 }
