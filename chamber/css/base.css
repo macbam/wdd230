@@ -123,6 +123,7 @@ nav {
 hr {
     border-color: white;
 }
+
 .right {
     background-color: var(--primary-color);
 }
@@ -165,7 +166,7 @@ hr {
     
 }
 
- .joinBtn {
+.joinBtn {
     position: absolute;
     bottom: 50px;
     right: 50px;
@@ -184,17 +185,17 @@ hr {
     border-radius: 8px;
  }
 
- .hero-text {
+.hero-text {
     position: absolute;
     top: 10px;
     left: 30px;
  }
 
- .hero-text h3 {
+.hero-text h3 {
      color: black;
  }
 
- table {
+table {
     margin: 0 auto;
     padding: 15px;
 }
@@ -211,4 +212,25 @@ hr {
 
 .right {
     padding: 15px;
+}
+
+.size {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.size h3 {
+    color: black;
+}
+
+#smallW {
+    display: block;
+}
+
+#mediumW {
+    display: none;
+}
+
+#largeW {
+    display: none;
 }

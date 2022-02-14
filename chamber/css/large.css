@@ -115,4 +115,16 @@
     .left{
         margin-left: 0;
     } */
+
+    #smallW {
+        display: none;
+    }
+    
+    #mediumW {
+        display: none;
+    }
+    
+    #largeW {
+        display: block;
+    }
 }

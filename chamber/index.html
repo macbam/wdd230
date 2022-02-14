@@ -17,7 +17,7 @@
     <header>
         <div class="title">
             <div class="logo">
-                <img src="images/buckeyelogo.png" alt="City Logo">
+                <img src="images/buckeyelogo.webp" alt="City Logo">
             </div>
             <div class="BillyTitle">
                 <h1>Billy Chamber of Commerce</h1>
@@ -64,11 +64,11 @@
                     <table>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td>20 mph</td>
+                            <td><span id="windSpeed">2.5</span> km/h</td>
                         </tr>
                         <tr>
                             <td>Wind Chill</td>
-                            <td>N/A</td>
+                            <td><span id="windChill"></span>°</td>
                         </tr>
                     </table>
                 </div>
@@ -85,7 +85,19 @@
                     <div class="hero-text">
                         <h3>Welcome to Billy</h3>
                     </div>
-                    <img src="images/city.jpg" alt="city image">
+                    <!-- <img src="images/city.jpg" alt="city image"> -->
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/wdd230-org_large.jpg">
+                        <source media="(min-width: 640px)" srcset="images/wdd230-org_medium.jpg">
+                        <img src="images/wdd230-org_small.jpg" alt="W06 temp image">
+                    </picture>
+                    <div class="size">
+                        <h3>
+                            <span id="smallW">Small</span>
+                            <span id="mediumW">Medium</span>
+                            <span id="largeW">Large</span>
+                        <h3>
+                    </div>
                     <button type="button" class="joinBtn">Join the Chamber</button>
                 </div>
 

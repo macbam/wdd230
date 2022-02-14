@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) and (max-width: 1023px) {
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
 	.navigation {
 		display: flex;
 	}
@@ -88,6 +88,18 @@
 
     .trans, .coding {
         flex-grow: 3;
+    }
+
+    #smallW {
+        display: none;
+    }
+    
+    #mediumW {
+        display: block;
+    }
+    
+    #largeW {
+        display: none;
     }
 
     
