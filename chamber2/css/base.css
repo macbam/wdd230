@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+* {
+    padding: 0;
+}
+
+:root {
+    --primary-color: #33658A;
+    --secondary-color: #2F4858;
+    --isActive: #55DDE0;
+    --hover: #F26419;
+    --button : #06871c;
+}
+
+/* html{
+    background-color: var(--primary-color);
+    
+} */
+
+body {
+    /* max-width: 960px; */
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h3 {
+    padding: 5px;
+    color: #ffea4f;
+}
+
+p {
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 2px;
+}
+
+
+.title {
+    margin: 0 auto;
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 1fr 6fr;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.BillyTitle {
+    grid-column: 2/3;
+}
+
+.date {
+    padding-top: 5px;
+}
+
+.foot {
+    font-size: 14px;
+    padding: 1em;
+}
+
+header, footer{
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 10px;
+}
+
+nav {
+	margin: 0 auto;
+	/* max-width: 960px;  */
+    box-shadow: 0 0 25px rgba(0,0,0,0.51);
+	background-color: var(--secondary-color);
+    
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+.ham img {
+    width: 25px;
+    height: 25px;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+
+.navigation a:hover {
+	color: white;
+	background-color: var(--hover);
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* .content img {
+    width: 300px;
+    height: 225px;
+} */
+
+hr {
+    border-color: white;
+}
+
+.right {
+    background-color: var(--primary-color);
+}
+
+.ribbon, .weather, .join, .newsRelease, .trans, .coding, .trees {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 25px rgba(0,0,0,0.51);
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* .join {
+    margin-top: 20px;
+} */
+
+.join button {
+    background-color: var(--button);
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    border-radius: 8px;
+}
+
+.hero-image {
+    position: relative;
+    margin: 10px auto;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.joinBtn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: var(--button);
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+ }
+
+.hero-text {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+ }
+
+.hero-text h3 {
+     color: black;
+ }
+
+table {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.moreInfo p {
+    padding: 5px;
+    font-size: small;
+}
+
+.right img {
+    width: 100px;
+    height: 100px;
+}
+
+.right {
+    padding: 15px;
+}
+
+.size {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.size h3 {
+    color: black;
+}
+
+#smallW {
+    display: block;
+}
+
+#mediumW {
+    display: none;
+}
+
+#largeW {
+    display: none;
+}
+
+
+
+.visited h3 {
+    color: black;
+}
+
+.contentDisc img {
+    width: 370px;
+    height: 260px;
+}
+
+.desc p {
+    padding: 5px;
+    font-style: italic;
+}

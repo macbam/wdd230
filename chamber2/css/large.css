@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1024px) {
+
+    .title {
+        grid-template-columns: 1fr 6fr 1fr;
+    }
+
+    .navigation {
+		display: flex;
+	}
+
+    .navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+    .navigation a {
+		text-align: center;
+	}
+
+    .navigation li:first-child {
+		display: none;
+	}
+
+    .navBar {
+        display: block;
+    }
+
+    .content {
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        display: flex;
+        /* align-items: center; */
+        /* align-content: flex-end; */
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 10px;
+        row-gap: 10px;
+
+        /* margin-left: 120px; */
+        
+    }
+
+    .newsRelease {
+        max-width: 800px;
+    }
+
+    /*FIX THIS PLEASE*/
+    .right, .left {
+        max-width: 260px;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* grid-template-rows: 1fr 1fr 1fr; */
+    }
+
+    .hero-image {
+        /* grid-row: 1/2;
+        grid-column: 1/2; */
+        /* flex-grow: 4; */
+        height: auto;
+        width: auto;
+        /* align-items: center; */
+    }
+
+    .hero-image img {
+        width: 800px;
+        height: 500px;
+        padding: 10px;
+        
+    }
+
+    .trans, .coding, .trees {
+        width: 200px;
+    }
+
+    .right {
+        padding: 15px;
+        margin: 10px 0;
+        /* margin-right: 100px; */
+    }
+
+    .left {
+        padding: 0px;
+        margin: 10px 0;
+        /* margin-left: 100px; */
+    }
+
+    .ribbon, .join {
+        flex-grow: 1;
+        padding: 10px;
+        /* margin: 10px 0; */
+    }
+
+    .ribbon, .weather {
+        margin-bottom: 10px;
+    }
+    
+    .weather {
+        flex-grow: 2;
+        padding: 10px;
+    }
+
+    p {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 2px;
+    }
+
+    /* .right{
+        margin-right: 0;
+    }
+
+    .left{
+        margin-left: 0;
+    } */
+
+    #smallW {
+        display: none;
+    }
+    
+    #mediumW {
+        display: none;
+    }
+    
+    #largeW {
+        display: block;
+    }
+
+
+
+    .contentDisc {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contentDisc img:hover {
+        box-shadow: 0 0 25px rgba(0,0,0,0.51);
+    }
+}
