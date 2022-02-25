@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --primary-color: #7fb9c2;
+    --secondary-color: #628ca6;
+    --tertiary-color: #e7f0ed;
+    --quaternary-color: #e7ffed;
+    --border-color: #bbbbbb;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 7px 7px 10px  var(--secondary-color);
+    border-collapse: collapse;
+    border: thin solid var(--border-color);
+}
+
+
+
+thead tr:first-child {
+    background-color: var(--primary-color);
+    color: black;
+    font-size: larger;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--tertiary-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--quaternary-color);
+}
+
+tbody tr:first-child {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.success {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: thin solid var(--border-color);
+}
+
+caption {
+    caption-side: bottom;
+    font-size: .8em;
+    border: thin solid var(--border-color);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: var(--primary-color);
+    box-shadow: 7px 7px 10px var(--secondary-color), 7px 0px 10px -3px var(--secondary-color);
+}
