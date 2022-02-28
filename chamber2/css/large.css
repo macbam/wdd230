@@ -128,7 +128,7 @@
         display: block;
     }
 
-
+    /* discover.html */
 
     .contentDisc {
         display: grid;
@@ -137,5 +137,22 @@
 
     .contentDisc img:hover {
         box-shadow: 0 0 25px rgba(0,0,0,0.51);
+    }
+
+    /* join.html */
+
+    .contentJoin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: 0 auto;
+        /* margin: 0 500px; */
+        
+    }
+
+    .levels {
+        width: 480px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

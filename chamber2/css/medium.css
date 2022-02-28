@@ -102,8 +102,7 @@
         display: none;
     }
 
-
-    
+    /* discover.html */
 
     .contentDisc {
         display: grid;
@@ -114,5 +113,15 @@
         box-shadow: 0 0 25px rgba(0,0,0,0.51);
     }
 
+    /* join.html */
+    
+    .contentJoin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+/* 
+    .levels {
+        width: ;
+    } */
     
 }

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - City of Billy, Idaho</title>
+    <meta name="description" content="Join page for Billy, Idaho Chamber of Commerce.">
+      
+    <link rel = "stylesheet" href= ../css/normalize.css>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />    
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">
+                <a href="index.html"><img src="images/buckeyelogo.webp" alt="City Logo"></a>
+            </div>
+            <div class="BillyTitle">
+                <h1>Billy Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation"> 
+                <li><a class="ham" href="#"><img src="images/ham.png" alt="ham" class="down"></a></li>
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+    </header>
+
+
+
+    <main>
+        <div class = "contentJoin">
+            <div class="formBlock">
+                <form method="get" action="thankyou.html">
+                    <p>
+                        <span class="required">*</span> Required
+                    </p>
+                    <label for="fname">First Name: <span class="required">*</span></label>
+                    <input id="fname" name="firstname" required>
+
+                    <label for="lname">Last Name: <span class="required">*</span></label>
+                    <input id="lname" name="lastname" required>
+
+                    <label for="bpos">Business Position:</label>
+                    <input id="bpos" name="businesspos" minlength="7" pattern="[-A-Za-z]+">
+
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input id="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone Number: <span class="required">*</span></label>
+                    <input id="phone" name="phone" type="tel" required>
+
+                    <label for="bname">Business Name: <span class="required">*</span></label>
+                    <input id="bname" name="businessname" required>
+
+                    <input id="time" type="hidden" value="curDate" name="date">
+                    
+
+                    <p>Choose Level of Membership</p>
+
+                    <div class="radioLevels">
+                        <div class="radioLev1">
+                            <label for="radio1">Bronze Membership</label>
+                            <input id="radio1" type="radio" name="level" value="level1">
+                        </div>
+
+                        <div class="radioLev2">
+                            <label for="radio2">Silver Membership</label>
+                            <input id="radio2" type="radio" name="level" value="level2">
+                        </div>
+
+                        <div class="radioLev3">
+                            <label for="radio3">Gold Membership</label>
+                            <input id="radio3" type="radio" name="level" value="level3">
+                        </div>
+                    </div>
+
+                    <label for="message">Describe Your Business:</label>
+                    <textarea id="message"></textarea>
+
+                    <button id="submit">Submit</button>                    
+                </form>
+            </div>
+
+            <div class="levels">
+                <div class="lev1desc">
+                    <h2>Bronze Membership</h2>
+                    <ul class="desclist">
+                        <li>15% discount on events</li>
+                        <li>10% discount on advertising</li>
+                        <li>Fee of $50/month</li>
+                    </ul>
+                </div>
+
+                <div class="lev2desc">
+                    <h2>Silver Membership</h2>
+                    <ul class="desclist">
+                        <li>25% discount on events</li>
+                        <li>15% discount on advertising</li>
+                        <li>Free participation in the trade fair</li>
+                        <li>Fee of $100/month</li>
+                    </ul>
+                </div>
+
+                <div class="lev3desc">
+                    <h2>Gold Membership</h2>
+                    <ul class="desclist">
+                        <li>50% discount on events</li>
+                        <li>50% discount on advertising</li>
+                        <li>Free participation in the trade fair</li>
+                        <li>5 free featured ads per year</li>
+                        <li>1 free training per quarter</li>
+                        <li>Fee of $250/month</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class = "foot">
+    
+            
+            <p>&copy;<span id ="currentYear"></span> Billy Chamber of Commerce | Brandon MacPherson | WDD 230 Project | <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src = "js/join.js"></script>
+</body>
+</html>
