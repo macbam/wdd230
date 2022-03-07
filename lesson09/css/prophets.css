@@ -1,0 +1,51 @@
+:root {
+    --headline-color: #4d4d96;
+    --card-color: #b9b9cc;
+    --border-color: #9c9cbd;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+    color: var(--headline-color);
+}
+
+p {
+    font-size: 1.1em;
+}
+
+header, .cards {
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 320px;
+    box-shadow: 0 9px 30px rgb(0 0 0 / 5);
+}
+
+section {
+    background-color: var(--card-color);
+    margin: 10px;
+    padding: 25px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-width: 0.2em;
+}
+
+@media only screen and (min-width: 640px){
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1px;
+    }
+    section {
+        margin: 5px;
+    }
+    
+}
