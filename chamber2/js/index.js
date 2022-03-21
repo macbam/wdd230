@@ -121,4 +121,16 @@ function weatherFormat(jsonObject) {
     document.getElementById("windSpeed").textContent = Math.round(windSpeed);
 }
 
+//join button
 
+let joinbtn1 = document.getElementById("joinbtn1")
+let joinbtn2 = document.getElementById("joinbtn2")
+
+joinbtn1.addEventListener('click', joinBtns)
+joinbtn2.addEventListener('click', joinBtns)
+
+
+
+function joinBtns() {
+    location.href = "join.html"
+}

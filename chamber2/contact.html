@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - City of Stow, Ohio</title>
+    <meta name="description" content="Contact page for Stow, Ohio Chamber of Commerce.">
+      
+    <link rel = "stylesheet" href= ../css/normalize.css>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />    
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">
+                <a href="index.html"><img src="images/buckeyelogo.webp" alt="City Logo"></a>
+            </div>
+            <div class="BillyTitle">
+                <h1>Stow Chamber of Commerce</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation"> 
+                <li><a class="ham" href="#"><img src="images/ham.png" alt="ham" class="down"></a></li>
+                <li><a href="discover.html" >Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+    </header>
+
+
+
+    <main>
+        <div class = "contentContact">
+            <div class="formBlock2">
+                <h2>Contact us Here:</h2>
+                <form method="get" action="thankyou.html">
+                    <p>
+                        <span class="required">*</span> Required
+                    </p>
+                    <label for="fname">First Name: <span class="required">*</span></label>
+                    <input id="fname" name="firstname" required>
+
+                    <label for="lname">Last Name: <span class="required">*</span></label>
+                    <input id="lname" name="lastname" required>
+
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input id="email" type="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone Number: <span class="required">*</span></label>
+                    <input id="phone" name="phone" type="tel" required>
+
+                    <input id="time" type="hidden" value="curDate" name="date">
+
+                    <label for="message">Comment:</label>
+                    <textarea id="message"></textarea>
+
+                    <button id="submit">Submit</button>                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "foot">
+    
+            
+            <p>&copy;<span id ="currentYear"></span> Stow Chamber of Commerce | Brandon MacPherson | WDD 230 Project | <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src = "js/contact.js"></script>
+</body>
+</html>
