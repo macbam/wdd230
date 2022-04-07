@@ -1,0 +1,31 @@
+{"data":[
+    {
+        "name": "Salt Lake City Temple",
+        "address": "50 W North Temple St Salt Lake City UT 84150-9709 United States",
+        "number": "801-240-2640",
+        "image": "images/temple_images/salt_lake_temple.jpg",
+        "schedule": ["Temple will be closed until 2024.  No appointments are available."]
+    },
+    {
+        "name": "Oquirrh Mountain Utah Temple",
+        "address": "11022 S 4000 W South Jordan UT 84009-5797 United States",
+        "number": "801-878-3800",
+        "image": "images/temple_images/oquirrh_mountain_utah_temple.jpg",
+        "schedule": ["Monday, 14 March 2022 - Monday, 9 May 2022", "Saturday, 23 July 2022", "Monday, 12 September 2022 - Monday, 26 September 2022", "Saturday, 1 October 2022", "Wednesday, 23 November 2022 (Limited Operations)", "Thursday, 24 November 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022"]
+    },
+    {
+        "name": "Logan Temple",
+        "address": "175 N 300 E Logan UT 84321-4720 United States",
+        "number": "435-752-3611",
+        "image": "images/temple_images/logan_temple.jpg",
+        "schedule": ["Saturday, 1 October 2022", "Monday, 3 October 2022 - Monday, 17 October 2022", "Wednesday, 23 November 2022 (Limited Operations)", "Thursday, 24 November 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022 (Limited Operations)"]
+    },
+    {
+        "name": "Manti Temple",
+        "address": "200 E 510 N Manti UT 84642-1701 United States",
+        "number": "435-835-2291",
+        "image": "images/temple_images/manti_temple.jpg",
+        "schedule": ["Temple is closed for renovation.  No appointments are avaiable."]
+    }
+        ]
+}

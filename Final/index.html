@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">
+                <a href="#"><img src="images/temple_icon.png" alt="Temple Logo"></a>
+            </div>
+            <div class="title_text">
+                <h1>Temple Inn & Suits</h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li><a class="ham" href="#"><img src="images/ham2.png" alt="ham" class="down"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="temple.html" >Temple</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class = "content">
+            <div id="hero_box" class="box">
+                <div id="hero_text">
+                    <h3>Stay with us!</h3>
+                </div>
+                <img src="images/temple.jpg" alt="temple">
+                <button type="button" class="resBtn" id="rezBtn">Make Reservation</button>
+            </div>
+            
+            <div id="info_box" class="box">
+                <h2 class="box_heading">About Salt Lake Temple</h2>
+
+                <img id="temple_img" src="images/salt_lake_temple.jpg" alt="temple image">
+                <div class="info_text">
+                    <p>Here are some interesting facts about the Salt Lake Temlple:</p>
+                    <ul>
+                        <li>
+                            It was the fourth temple built in Utah (though its construction was started first)
+                            and the first built in the Salt Lake Valley.
+                        </li>
+                        <li>
+                            The Salt Lake Temple was the only temple dedicated by President Wilford Woodruff.
+                        </li>
+                        <li>
+                            The Salt Lake Temple was the only temple dedicated by President Wilford Woodruff.
+                            With its distinctive spires and statue of the angel Moroni, the Salt Lake Temple 
+                            is an international symbol of the Church.
+                        </li>
+                        <li>The Salt Lake Temple is the largest temple (most square footage) of the Church.</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="special">
+                <div id="weather_box" class="box">
+                    <h2 class="box_heading">Weather</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/windy.png" id = "weathericon" alt="windy">
+                            </td>
+                            <td>
+                                <h1><span id = "temp"></span> °F</h1>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Windy</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td><span id="windSpeed">2.5</span> mph</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill</td>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="contact_box" class="box">
+                    <h2 class="box_heading">Have a Question?</h2>
+                    <img class="contact_img" src="images/contact.png" alt="contact img">
+                    <p class="contact_info">Contact us for any questions and concerns at the number below.</p>
+                    <p class="phone">330-555-0303</p>
+
+                </div>
+            </div>
+
+            <div id="amenities_box" class="box">
+                <h2 class="box_heading">Free Amenities</h2>
+                <div class="amenities_list">
+                    <p>Breakfast</p>
+                    <p>Exercise Room</p>
+                    <p>Indoor Swimming Pool</p>
+                    <p>High Speed WI-FI</p>
+                    <p>Smart TVs</p>
+                    <p>Parking</p>
+                    <p>Temple shuttle</p>
+                    <p>Familiy history consultation</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "foot">
+    
+            
+            <p>&copy;<span id ="currentYear"></span> Temple Inn & Suits | Brandon MacPherson | WDD 230 Project</p>
+        </div>
+    </footer>
+
+    <script src = "js/index.js"></script>
+</body>
+</html>
