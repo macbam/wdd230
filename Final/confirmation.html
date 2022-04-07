@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Chamber of Commerce - City of Stow, Ohio</title>
+    <meta name="description" content="Thankyou sub-page for Stow, Ohio Chamber of Commerce.">
+      
+    <link rel = "stylesheet" href= ../css/normalize.css>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />    
 </head>
+
 <body>
     <header>
         <div class="title">
@@ -25,27 +26,21 @@
             <ul class="navigation"> 
                 <li><a class="ham" href="#"><img src="images/ham2.png" alt="ham" class="down"></a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" >Temple</a></li>
+                <li><a href="temple.html" >Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div id="box1" class="box">
-            <h1>Visit the Temple</h1>
-            <p>These are the temples we drive our patrons to!  Click below to see the different temples.</p>
-        
-            <select name="temple_dropdown" onchange="add_temple(this.value);">
-                <option value="0">Salt Lake City Temple</option>
-                <option value="1">Oquirrh Mountain Utah Temple</option>
-                <option value="2">Logan Temple</option>
-                <option value="3">Manti Temple</option>
-            </select>
-        </div>
 
-        <div class="temples box"></div>
+
+
+    <main>
+        <div class = "contentThank">
+            <h2>Thank you</h2>
+            <div class="returnHome"><a href="index.html"><h3>Return Home</h3></a></div>
+        </div>
     </main>
 
     <footer>
@@ -54,13 +49,11 @@
                 <a href="https://www.facebook.com/"><img src="images/fb.png"></a>
                 <a href="https://www.instagram.com/"><img src="images/insta.png"></a>
             </div>
-    
             
             <p>&copy;<span id ="currentYear"></span> Temple Inn & Suits | Brandon MacPherson | WDD 230 Project</p>
         </div>
     </footer>
 
-    <script src = "js/temple.js"></script>
-    
+    <script src = "js/index.js"></script>
 </body>
 </html>

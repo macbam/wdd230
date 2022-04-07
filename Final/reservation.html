@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">
+                <a href="#"><img src="images/temple_icon.png" alt="Temple Logo"></a>
+            </div>
+            <div class="title_text">
+                <h1>Temple Inn & Suits</h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li><a class="ham" href="#"><img src="images/ham2.png" alt="ham" class="down"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html" >Temple</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class = "contentJoin">
+            <div class="formBlock">
+                <form method="get" action="confirmation.html">
+                    <p>
+                        <span class="required">*</span> Required
+                    </p>
+                    <label for="loc">Location: <span class="required">*</span></label>
+                    <input id="loc" name="location" required>
+
+                    <label for="date">Date: <span class="required">*</span></label>
+                    <input id="date" name="dateStay" type="date" min="2020-01-01" max="2050-01-01" required>
+
+                    <label for="numRooms">Number of Rooms: <span class="required">*</span></label>
+                    <input id="numRooms" name="number_of_rooms" min="0" max="10" required>
+
+                    <input id="time" type="hidden" value="curDate" name="date">
+                    
+
+                    <p>Room Type:</p>
+
+                    <div class="radioLevels">
+                        <div class="radioLev1">
+                            <label for="radio1">Bronze Package</label>
+                            <input id="radio1" type="radio" name="level" value="level1">
+                        </div>
+
+                        <div class="radioLev2">
+                            <label for="radio2">Silver Package</label>
+                            <input id="radio2" type="radio" name="level" value="level2">
+                        </div>
+
+                        <div class="radioLev3">
+                            <label for="radio3">Gold Package</label>
+                            <input id="radio3" type="radio" name="level" value="level3">
+                        </div>
+                    </div>
+
+                    <label for="fname">First Name: <span class="required">*</span></label>
+                    <input id="fname" name="firstname" required>
+
+                    <label for="lname">Last Name: <span class="required">*</span></label>
+                    <input id="lname" name="lastname" required>
+
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <input id="email" type="email" name="email" placeholder="example@email.com" required>
+
+                    <label for="phone">Phone Number: <span class="required">*</span></label>
+                    <input id="phone" name="phone" type="tel" required>
+
+                    <label for="hState">Home State or country: <span class="required">*</span></label>
+                    <input id="hState" name="homeState" required>
+
+                    <label for="message">Special accommodations/comments:</label>
+                    <textarea id="message"></textarea>
+
+                    <button id="submit">Submit</button>                    
+                </form>
+            </div>
+
+            <div class="levels">
+                <div class="lev1desc">
+                    <h2>Bronze Package</h2>
+                    <h3> Perks: </h3>
+                    <ul class="desclist">
+                        <li>2 Queen beds</li>
+                        <li>TV</li>
+                        <li>1 Bathroom</li>
+                        <li>$60/night</li>
+                    </ul>
+                </div>
+
+                <div class="lev2desc">
+                    <h2>Silver Package</h2>
+                    <h3> Perks: </h3>
+                    <ul class="desclist">
+                        <li>2 King beds</li>
+                        <li>TV</li>
+                        <li>1 Bathroom</li>
+                        <li>$100/night</li>
+                    </ul>
+                </div>
+
+                <div class="lev3desc">
+                    <h2>Gold Package</h2>
+                    <h3> Perks: </h3>
+                    <ul class="desclist">
+                        <li>2 King beds in seperate bedrooms</li>
+                        <li>Queen pullout in living area</li>
+                        <li>2 Bathrooms</li>
+                        <li>3 TVs</li>
+                        <li>$200/night</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class = "foot">
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="images/fb.png"></a>
+                <a href="https://www.instagram.com/"><img src="images/insta.png"></a>
+            </div>
+    
+            
+            <p>&copy;<span id ="currentYear"></span> Temple Inn & Suits | Brandon MacPherson | WDD 230 Project</p>
+        </div>
+    </footer>
+
+    <script src = "js/reservation.js"></script>
+    
+</body>
+</html>

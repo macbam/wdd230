@@ -87,14 +87,14 @@ function weatherFormat(jsonObject) {
 
 //join button
 
-let joinbtn1 = document.getElementById("joinbtn1")
-let joinbtn2 = document.getElementById("joinbtn2")
+let joinbtn1 = document.getElementById("rezBtn")
+
 
 joinbtn1.addEventListener('click', joinBtns)
-joinbtn2.addEventListener('click', joinBtns)
+
 
 
 
 function joinBtns() {
-    location.href = "join.html"
+    location.href = "reservation.html"
 }
